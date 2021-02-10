@@ -3,3 +3,8 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.hero-container {
+  height: 500px;
+  /* background-image: url("../static/home/mobile/image-hero-coffeepress.jpg"); */
+}
