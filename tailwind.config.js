@@ -12,6 +12,10 @@ module.exports = {
         numero: "#FDD6BA",
         textfooter: "#83888F",
       },
+      // backgroundImage: (theme) => ({
+      //   "hero-pattern":
+      //     "url('./src/assets/static/home/desktop/image-danche.png')",
+      // }),
     },
     fontFamily: {
       title: ["Fraunces"],

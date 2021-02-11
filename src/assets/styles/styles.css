@@ -6,5 +6,28 @@
 
 .hero-container {
   height: 500px;
-  /* background-image: url("../static/home/mobile/image-hero-coffeepress.jpg"); */
+  padding: 1px;
+}
+
+.btn {
+  font-family: "Fraunces";
+  background: #0e8784;
+  padding: 16px 32px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.degradado-text {
+  font-size: 2.5rem;
+  color: transparent;
+  font-family: "Fraunces";
+  text-align: center;
+  font-weight: bold;
+  background: rgb(151, 151, 151);
+  background: linear-gradient(
+    0deg,
+    rgba(151, 151, 151, 1) 10%,
+    rgba(255, 255, 255, 1) 83%
+  );
+  -webkit-background-clip: text;
 }
