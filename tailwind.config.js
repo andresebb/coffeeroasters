@@ -8,7 +8,9 @@ module.exports = {
       colors: {
         verde: "#0E8784",
         text: "#333D4B",
+        gris: "#83888F",
         blanco: "#FEFCF7",
+        background: "#2C343E",
         numero: "#FDD6BA",
         textfooter: "#83888F",
       },

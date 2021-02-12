@@ -14,6 +14,7 @@
   padding: 16px 32px;
   border-radius: 0.5rem;
   font-weight: bold;
+  color: #fefcf7;
 }
 
 .degradado-text {
@@ -33,7 +34,6 @@
 
 .skills {
   background: rgba(0, 0, 0, 0.103);
-  height: 620px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
