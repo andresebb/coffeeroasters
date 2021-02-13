@@ -15,18 +15,40 @@
       rel="stylesheet"
     />
   </head>
-  <body class="p-6">
-    <header class="mb-10">
+  <body class="px-6 pb-12">
+    <header class="mb-10 fixed z-50 top-0 right-0 left-0 bg-white p-6">
       <div class="flex">
         <div class="w-2/4">
           <img src="./assets/static/shared/desktop/logo.svg" alt="" />
         </div>
         <div class="w-2/4 flex flex-row-reverse">
-          <img src="./assets/static/shared/mobile/icon-hamburger.svg" alt="" />
+          <img
+            id="burger-boton"
+            class="cursor-pointer"
+            src="https://i.ibb.co/VgBm84N/icon-close.png"
+            alt=""
+          />
         </div>
       </div>
+      <nav id="menu" class="menu flex justify-items-center text-center">
+        <ul class="mx-auto">
+          <li class="mt-24 mb-9">
+            <a href="" class="text-2xl font-title font-black text-text">Home</a>
+          </li>
+          <li class="my-9">
+            <a href="" class="text-2xl font-title font-black text-text">
+              About Us
+            </a>
+          </li>
+          <li class="my-9">
+            <a href="" class="text-2xl font-title font-black text-text">
+              Create Your Plan
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section id="hero" class="mb-28">
+    <section id="hero" class="my-28">
       <div class="hero-container relative">
         <div>
           <img
@@ -40,7 +62,7 @@
             <h1 class="text-4xl font-bold font-title">
               Great coffee made simple.
             </h1>
-            <p class="my-6 font-text text-blanco">
+            <p class="my-6 font-text text-blanco px-3">
               Start your mornings with the world’s best coffees. Try our
               expertly curated artisan coffees from our best roasters delivered
               directly to your door, at your schedule.
@@ -137,20 +159,22 @@
         </div>
       </div>
     </section>
-    <section id="why-choose-us" class="why-choose-us pt-12 bg-text rounded-2xl">
+    <section id="why-choose-us" class="why-choose-us pt-12 relative">
+      <div class="background rounded-2xl bg-text"></div>
       <div class="about-container">
         <div>
-          <h3 class="text-2xl font-title font-bold text-center text-blanco">
+          <h3 class="text-2xl font-title font-black text-center text-blanco">
             Why choose us?
           </h3>
-          <p class="text-center font-text text-blanco my-6">
+          <p class="text-center font-text text-blanco my-6 p-6">
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best
             coffee growers to give you a more impactful experience on every
             level.
           </p>
         </div>
-        <div class="skills p-6">
+        <div class="skills relative p-6">
+          <div class="skill-background"></div>
           <div class="sill-box bg-verde text-center py-12 px-4 rounded-lg">
             <div>
               <img
@@ -163,13 +187,13 @@
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Best Quality
               </h4>
-              <p class="text-blanco font-text px-8">
+              <p class="text-blanco font-text px-5">
                 Discover an endless variety of the world’s best artisan coffee
                 from each of our roasters.
               </p>
             </div>
           </div>
-          <div class="sill-box bg-verde text-center py-12 px-4 rounded-lg mt-8">
+          <div class="sill-box bg-verde text-center py-12 px-5 rounded-lg mt-8">
             <div>
               <img
                 class="m-auto my-10"
@@ -181,7 +205,7 @@
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Exclusive benefits
               </h4>
-              <p class="text-blanco font-text px-8">
+              <p class="text-blanco font-text px-5">
                 Special offers and swag when you subscribe, including 30% off
                 your first shipment.
               </p>
@@ -199,7 +223,7 @@
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Free shipping
               </h4>
-              <p class="text-blanco font-text px-8">
+              <p class="text-blanco font-text px-4">
                 We cover the cost and coffee is delivered fast. Peak freshness:
                 guaranteed.
               </p>

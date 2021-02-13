@@ -4,6 +4,21 @@
 
 @tailwind utilities;
 
+textarea,
+select,
+input,
+img,
+button {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:focus {
+  outline-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  outline-style: none;
+}
+
 .hero-container {
   padding: 1px;
 }
@@ -15,6 +30,15 @@
   border-radius: 0.5rem;
   font-weight: bold;
   color: #fefcf7;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 608px;
 }
 
 .degradado-text {
@@ -32,8 +56,29 @@
   -webkit-background-clip: text;
 }
 
-.skills {
+.skill-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 609px;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.103);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: -100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.125) 10%,
+    rgba(255, 255, 255, 1) 49%
+  );
 }
