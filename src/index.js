@@ -9,7 +9,6 @@ const button = document.getElementById("burger-boton");
 const menu = document.getElementById("menu");
 
 button.onclick = () => {
-  console.log("hola");
   if (menu.style.display === "block") {
     menu.style.display = "none";
     button.src = openBurgerMenu;
