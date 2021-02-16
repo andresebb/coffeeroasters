@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Aqui estoy yo dandole")})();
+(()=>{"use strict";var e=document.getElementById("burger-boton"),o=document.getElementById("menu");e.onclick=()=>{"block"===o.style.display?(o.style.display="none",e.src="https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-hamburger.svg?alt=media&token=cc5191a7-2762-43ef-af85-6fa72ce027ff"):(o.style.display="block",e.src="https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-close.svg?alt=media&token=3eab5dc9-204b-4402-aaad-10ae6e004c56")}})();
