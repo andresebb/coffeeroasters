@@ -18,6 +18,9 @@ module.exports = {
       //   "hero-pattern":
       //     "url('./src/assets/static/home/desktop/image-danche.png')",
       // }),
+      maxWidth: {
+        "tablet-hero": "392px",
+      },
     },
     fontFamily: {
       title: ["Fraunces"],
