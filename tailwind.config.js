@@ -20,6 +20,7 @@ module.exports = {
       // }),
       maxWidth: {
         "tablet-hero": "392px",
+        "work-title": "190px",
       },
       fontSize: {
         our: "5.5rem",

@@ -82,3 +82,20 @@ button {
     rgba(255, 255, 255, 1) 49%
   );
 }
+
+.circulo {
+  height: 30px;
+  width: 30px;
+  background: #e4e4e4;
+  border-radius: 30px;
+  border: 2px solid #0e8784;
+}
+
+.linea {
+  border-top: 2px solid #fdd6ba;
+  left: 0;
+  top: 15px;
+  width: 71%;
+  position: absolute;
+  z-index: -99;
+}
