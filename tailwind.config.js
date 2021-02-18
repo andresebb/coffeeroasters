@@ -21,6 +21,15 @@ module.exports = {
       maxWidth: {
         "tablet-hero": "392px",
       },
+      fontSize: {
+        our: "5.5rem",
+      },
+      zIndex: {
+        negativo: "-99",
+      },
+      gridTemplateColumns: {
+        miti: "30% 70%",
+      },
     },
     fontFamily: {
       title: ["Fraunces"],
