@@ -15,8 +15,10 @@
       rel="stylesheet"
     />
   </head>
-  <body class="px-6 pb-12 md:px-10">
-    <header class="fixed z-50 top-0 right-0 left-0 bg-white p-6 md:px-10">
+  <body class="px-6 pb-12 md:px-10 lg:px-20">
+    <header
+      class="fixed z-50 top-0 right-0 left-0 bg-white p-6 md:px-10 lg:px-20"
+    >
       <div class="flex md:justify-between">
         <div class="w-2/4">
           <img src="./assets/static/shared/desktop/logo.svg" alt="" />
@@ -36,14 +38,14 @@
             <li class="mt-24 mb-9 md:m-0 md:tracking-wider">
               <a
                 href=""
-                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8"
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8 hover:text-foco uppercase"
                 >Home</a
               >
             </li>
             <li class="my-9 md:m-0 md:tracking-wider">
               <a
                 href=""
-                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8"
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8 hover:text-foco uppercase"
               >
                 About Us
               </a>
@@ -51,7 +53,7 @@
             <li class="my-9 md:m-0 md:tracking-wider">
               <a
                 href=""
-                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris"
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris hover:text-foco uppercase"
               >
                 Create Your Plan
               </a>
@@ -84,6 +86,10 @@
       <div class="hero-container relative">
         <picture>
           <source
+            srcset="./assets/static/home/desktop/image-hero-coffeepress.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source
             srcset="./assets/static/home/tablet/image-hero-coffeepress.jpg"
             media="(min-width: 768px)"
           />
@@ -111,12 +117,12 @@
     <section id="collection" class="">
       <div class="collection-container md:relative">
         <h1
-          class="degradado-text mb-4 md:absolute md:-top-20 md:left-0 md:right-0 md:font-black md:text-our md:z-negativo md:opacity-50"
+          class="degradado-text mb-4 md:absolute md:-top-20 md:left-0 md:right-0 md:font-black md:text-our md:z-negativo md:opacity-50 lg:text-grande lg:-top-24"
         >
           Our collection
         </h1>
-        <div class="coffee-collection">
-          <div class="coffee-box mb-14 md:flex md:justify-center">
+        <div class="coffee-collection lg:flex">
+          <div class="coffee-box mb-14 md:flex md:justify-center lg:block">
             <div>
               <img
                 class="m-auto w-52 md:w-64"
@@ -124,7 +130,9 @@
                 alt=""
               />
             </div>
-            <div class="text-center md:max-w-xs md:text-left md:py-4">
+            <div
+              class="text-center md:max-w-xs md:text-left md:py-4 lg:text-center"
+            >
               <h3 class="font-title text-2xl text-text font-black my-4">
                 Gran Espresso
               </h3>
@@ -134,7 +142,7 @@
               </p>
             </div>
           </div>
-          <div class="coffee-box mb-14 md:flex md:justify-center">
+          <div class="coffee-box mb-14 md:flex md:justify-center lg:block">
             <div>
               <img
                 class="m-auto w-52 md:w-64"
@@ -142,7 +150,9 @@
                 alt=""
               />
             </div>
-            <div class="text-center md:max-w-xs md:text-left md:py-4">
+            <div
+              class="text-center md:max-w-xs md:text-left md:py-4 lg:text-center"
+            >
               <h3 class="font-title text-2xl text-text font-black my-4">
                 Planalto
               </h3>
@@ -152,7 +162,7 @@
               </p>
             </div>
           </div>
-          <div class="coffee-box mb-14 md:flex md:justify-center">
+          <div class="coffee-box mb-14 md:flex md:justify-center lg:block">
             <div>
               <img
                 class="m-auto w-52 md:w-64"
@@ -160,7 +170,9 @@
                 alt=""
               />
             </div>
-            <div class="text-center md:max-w-xs md:text-left md:py-4">
+            <div
+              class="text-center md:max-w-xs md:text-left md:py-4 lg:text-center"
+            >
               <h3 class="font-title text-2xl text-text font-black my-4">
                 Piccollo
               </h3>
@@ -170,7 +182,7 @@
               </p>
             </div>
           </div>
-          <div class="coffee-box mb-14 md:flex md:justify-center">
+          <div class="coffee-box mb-14 md:flex md:justify-center lg:block">
             <div>
               <img
                 class="m-auto w-52 md:w-64"
@@ -178,7 +190,9 @@
                 alt=""
               />
             </div>
-            <div class="text-center md:max-w-xs md:text-left md:py-4">
+            <div
+              class="text-center md:max-w-xs md:text-left md:py-4 lg:text-center"
+            >
               <h3 class="font-title text-2xl text-text font-black my-4">
                 Danche
               </h3>
@@ -192,9 +206,11 @@
       </div>
     </section>
     <section id="why-choose-us" class="why-choose-us pt-12 relative">
-      <div class="background rounded-2xl bg-text md:bottom-96"></div>
+      <div
+        class="background rounded-2xl bg-text md:bottom-96 lg:bottom-64"
+      ></div>
       <div class="about-container">
-        <div>
+        <div class="lg:max-w-xl mx-auto">
           <h3
             class="text-2xl font-title font-black text-center text-blanco md:text-3xl"
           >
@@ -207,10 +223,12 @@
             level.
           </p>
         </div>
-        <div class="skills relative p-6 md:px-14">
-          <div class="skill-background md:bottom-96"></div>
+        <div
+          class="skills relative p-6 md:px-14 lg:grid lg:grid-cols-3 lg:gap-8 lg:px-20"
+        >
+          <div class="skill-background md:bottom-96 lg:bottom-64"></div>
           <div
-            class="sill-box bg-verde text-center py-12 px-4 rounded-lg md:grid md:grid-cols-miti md:items-center"
+            class="sill-box bg-verde text-center py-12 px-4 rounded-lg md:grid md:grid-cols-miti md:items-center lg:block"
           >
             <div>
               <img
@@ -219,7 +237,7 @@
                 alt=""
               />
             </div>
-            <div class="md:text-left">
+            <div class="md:text-left lg:text-center">
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Best Quality
               </h4>
@@ -230,7 +248,7 @@
             </div>
           </div>
           <div
-            class="sill-box bg-verde text-center py-12 px-5 rounded-lg mt-8 md:grid md:grid-cols-miti md:items-center"
+            class="sill-box bg-verde text-center py-12 px-5 rounded-lg mt-8 md:grid md:grid-cols-miti md:items-center lg:mt-0 lg:block"
           >
             <div>
               <img
@@ -239,7 +257,7 @@
                 alt=""
               />
             </div>
-            <div class="md:text-left">
+            <div class="md:text-left lg:text-center">
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Exclusive benefits
               </h4>
@@ -250,7 +268,7 @@
             </div>
           </div>
           <div
-            class="sill-box bg-verde text-center py-12 px-4 rounded-lg mt-8 md:grid md:grid-cols-miti md:items-center"
+            class="sill-box bg-verde text-center py-12 px-4 rounded-lg mt-8 md:grid md:grid-cols-miti md:items-center lg:mt-0 lg:block"
           >
             <div>
               <img
@@ -259,7 +277,7 @@
                 alt=""
               />
             </div>
-            <div class="md:text-left">
+            <div class="md:text-left lg:text-center">
               <h4 class="text-blanco font-bold font-title text-2xl mb-6">
                 Free shipping
               </h4>
@@ -343,33 +361,40 @@
     </section>
     <footer
       id="footer"
-      class="bg-background flex items-center justify-center py-12"
+      class="bg-background flex items-center justify-center py-12 xl:px-20"
     >
-      <div>
-        <div>
-          <img
-            class="m-auto"
-            src="./assets/static/shared/desktop/logo-blanco.svg"
-            alt=""
-          />
-        </div>
-        <div class="flex justify-center items-center text-center my-12">
-          <div class="md:grid md:grid-cols-3">
-            <p
-              class="font-bold text-gris font-text text-xs tracking-wider my-4"
-            >
-              HOME
-            </p>
-            <p
-              class="font-bold text-gris font-text text-xs tracking-wider my-4"
-            >
-              ABOUT US
-            </p>
-            <p
-              class="font-bold text-gris font-text text-xs tracking-wider my-4"
-            >
-              CREATE YOUR PLAN
-            </p>
+      <div class="xl:flex xl:justify-between xl:w-full">
+        <div class="xl:flex xl:items-center">
+          <div class="xl:mr-24">
+            <img
+              class="m-auto"
+              src="./assets/static/shared/desktop/logo-blanco.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex justify-center items-center text-center my-12 xl:my-0"
+          >
+            <div class="md:grid md:grid-cols-3 xl:flex">
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 xl:mr-8 hover:text-blanco"
+              >
+                HOME
+              </a>
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 xl:mr-8 hover:text-blanco"
+              >
+                ABOUT US
+              </a>
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 hover:text-blanco"
+              >
+                CREATE YOUR PLAN
+              </a>
+            </div>
           </div>
         </div>
         <div class="social-media flex items-center justify-center">
@@ -380,8 +405,13 @@
               src="./assets/static/shared/desktop/icon-facebook.svg"
               alt=""
             />
-            <img src="./assets/static/shared/desktop/icon-twitter.svg" alt="" />
             <img
+              class="xl:ml-6"
+              src="./assets/static/shared/desktop/icon-twitter.svg"
+              alt=""
+            />
+            <img
+              class="xl:ml-6"
               src="./assets/static/shared/desktop/icon-instagram.svg"
               alt=""
             />

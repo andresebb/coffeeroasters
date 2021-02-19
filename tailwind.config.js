@@ -13,6 +13,7 @@ module.exports = {
         background: "#2C343E",
         numero: "#FDD6BA",
         textfooter: "#83888F",
+        foco: "#333D4B",
       },
       // backgroundImage: (theme) => ({
       //   "hero-pattern":
@@ -24,6 +25,7 @@ module.exports = {
       },
       fontSize: {
         our: "5.5rem",
+        grande: "7rem",
       },
       zIndex: {
         negativo: "-99",
