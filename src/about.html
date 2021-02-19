@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coffeeroasters</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="px-6 pb-12 md:px-10 lg:px-20">
+    <header
+      class="fixed z-50 top-0 right-0 left-0 bg-white p-6 md:px-10 lg:px-20"
+    >
+      <div class="flex md:justify-between">
+        <div class="w-2/4">
+          <img src="./assets/static/shared/desktop/logo.svg" alt="" />
+        </div>
+        <div class="w-2/4 flex flex-row-reverse md:hidden">
+          <img
+            id="burger-boton"
+            class="cursor-pointer"
+            src="https://i.ibb.co/VgBm84N/icon-close.png"
+            alt=""
+          />
+        </div>
+        <nav
+          class="tablet-nav justify-items-center text-center hidden md:block md:static md:bg-white"
+        >
+          <ul class="mx-auto md:flex">
+            <li class="mt-24 mb-9 md:m-0 md:tracking-wider">
+              <a
+                href=""
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8 hover:text-foco uppercase"
+                >Home</a
+              >
+            </li>
+            <li class="my-9 md:m-0 md:tracking-wider">
+              <a
+                href=""
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris md:mr-8 hover:text-foco uppercase"
+              >
+                About Us
+              </a>
+            </li>
+            <li class="my-9 md:m-0 md:tracking-wider">
+              <a
+                href=""
+                class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris hover:text-foco uppercase"
+              >
+                Create Your Plan
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav
+        id="menu"
+        class="burger-nav menu flex justify-items-center text-center"
+      >
+        <ul class="mx-auto">
+          <li class="mt-24 mb-9">
+            <a href="" class="text-2xl font-title font-black text-text">Home</a>
+          </li>
+          <li class="my-9">
+            <a href="" class="text-2xl font-title font-black text-text">
+              About Us
+            </a>
+          </li>
+          <li class="my-9">
+            <a href="" class="text-2xl font-title font-black text-text">
+              Create Your Plan
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero" class="my-24">
+      <div class="hero-container relative">
+        <picture>
+          <source
+            srcset="./assets/static/about/desktop/image-hero-whitecup.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="./assets/static/about/tablet/image-hero-whitecup.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/static/about/mobile/image-hero-whitecup.jpg"
+            class="rounded-lg w-full"
+            alt=""
+          />
+        </picture>
+        <div class="absolute top-0 bottom-0 flex items-center px-3 md:px-14">
+          <div
+            class="text-blanco text-center md:text-left md:max-w-tablet-hero"
+          >
+            <h1 class="text-3xl font-black font-title md:text-5xl">About Us</h1>
+            <p
+              class="font-text text-blanco py-6 text-center opacity-80 md:mb-10 md:mt-6"
+            >
+              Coffeeroasters began its journey of exotic discovery in 1999,
+              highlighting stories of coffee from around the world. We have
+              since been dedicated to bring the perfect cup - from bean to brew
+              - in every shipment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="commitment">
+      <picture>
+        <source
+          srcset="./assets/static/about/desktop/image-commitment.jpg"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="./assets/static/about/tablet/image-commitment.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="./assets/static/about/mobile/image-commitment.jpg"
+          class="rounded-lg w-full"
+          alt=""
+        />
+      </picture>
+      <div>
+        <h2 class="font-title text-3xl font-black text-text text-center my-8">
+          Our commitment
+        </h2>
+        <p class="text-center text-text">
+          We’re built on a simple mission and a commitment to doing good along
+          the way. We want to make it easy for you to discover and brew the
+          world’s best coffee at home. It all starts at the source. To locate
+          the specific lots we want to purchase, we travel nearly 60 days a year
+          trying to understand the challenges and opportunities in each of these
+          places. We collaborate with exceptional coffee growers and empower a
+          global community of farmers through with well above fair-trade
+          benchmarks. We also offer training, support farm community
+          initiatives, and invest in coffee plant science. Curating only the
+          finest blends, we roast each lot to highlight tasting profiles
+          distinctive to their native growing region.
+        </p>
+      </div>
+    </section>
+    <footer
+      id="footer"
+      class="bg-background flex items-center justify-center py-12 xl:px-20"
+    >
+      <div class="xl:flex xl:justify-between xl:w-full">
+        <div class="xl:flex xl:items-center">
+          <div class="xl:mr-24">
+            <img
+              class="m-auto"
+              src="./assets/static/shared/desktop/logo-blanco.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex justify-center items-center text-center my-12 xl:my-0"
+          >
+            <div class="md:grid md:grid-cols-3 xl:flex">
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 xl:mr-8 hover:text-blanco"
+              >
+                HOME
+              </a>
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 xl:mr-8 hover:text-blanco"
+              >
+                ABOUT US
+              </a>
+              <a
+                href="#"
+                class="font-bold text-gris font-text text-xs tracking-wider my-4 hover:text-blanco"
+              >
+                CREATE YOUR PLAN
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="social-media flex items-center justify-center">
+          <div
+            class="flex items-center justify-around w-full md:justify-evenly"
+          >
+            <img
+              src="./assets/static/shared/desktop/icon-facebook.svg"
+              alt=""
+            />
+            <img
+              class="xl:ml-6"
+              src="./assets/static/shared/desktop/icon-twitter.svg"
+              alt=""
+            />
+            <img
+              class="xl:ml-6"
+              src="./assets/static/shared/desktop/icon-instagram.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
