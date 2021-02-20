@@ -33,6 +33,12 @@ module.exports = {
       gridTemplateColumns: {
         miti: "30% 70%",
       },
+      inset: {
+        "-quality": "-70px",
+      },
+      fontSize: {
+        "28px": "28px",
+      },
     },
     fontFamily: {
       title: ["Fraunces"],
