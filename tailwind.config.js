@@ -14,6 +14,7 @@ module.exports = {
         numero: "#FDD6BA",
         textfooter: "#83888F",
         foco: "#333D4B",
+        planback: "#F4F1EB",
       },
       // backgroundImage: (theme) => ({
       //   "hero-pattern":
@@ -33,6 +34,8 @@ module.exports = {
       gridTemplateColumns: {
         miti: "30% 70%",
         taqui: "40% 50%",
+        plan: "85% 15%",
+        drink: "70% 30%",
       },
       inset: {
         "-quality": "-70px",
