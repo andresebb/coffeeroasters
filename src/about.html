@@ -99,13 +99,15 @@
             alt=""
           />
         </picture>
-        <div class="absolute top-0 bottom-0 flex items-center px-3 md:px-14">
+        <div class="absolute top-0 bottom-0 flex items-center px-6 md:px-14">
           <div
             class="text-blanco text-center md:text-left md:max-w-tablet-hero"
           >
-            <h1 class="text-3xl font-black font-title md:text-5xl">About Us</h1>
+            <h1 class="text-28px font-black font-title md:text-3xl">
+              About Us
+            </h1>
             <p
-              class="font-text text-blanco py-6 text-center opacity-80 md:mb-10 md:mt-6"
+              class="font-text text-blanco py-6 text-center opacity-80 md:text-left md:max-w-sm"
             >
               Coffeeroasters began its journey of exotic discovery in 1999,
               highlighting stories of coffee from around the world. We have
@@ -116,7 +118,10 @@
         </div>
       </div>
     </section>
-    <section id="commitment" class="mb-28 pb-20">
+    <section
+      id="commitment"
+      class="mb-28 md:grid md:grid-cols-taqui md:items-center md:gap-10%"
+    >
       <picture>
         <source
           srcset="./assets/static/about/desktop/image-commitment.jpg"
@@ -133,10 +138,12 @@
         />
       </picture>
       <div>
-        <h2 class="font-title text-3xl font-black text-text text-center my-8">
+        <h2
+          class="font-title text-3xl font-black text-text text-center my-8 md:mt-0 md:text-left"
+        >
           Our commitment
         </h2>
-        <p class="text-center text-text">
+        <p class="text-center text-text md:text-left">
           We’re built on a simple mission and a commitment to doing good along
           the way. We want to make it easy for you to discover and brew the
           world’s best coffee at home. It all starts at the source. To locate
@@ -151,11 +158,10 @@
         </p>
       </div>
     </section>
-    <div class="quality mb-24">
-      <div class="bg-background relative px-6 rounded-lg pt-24 pb-16">
-        <div
-          class="quality-imagenes w-4/5 mx-auto absolute -top-quality right-0 left-0"
-        >
+    <div class="quality mb-20">
+      <div class="quality-container relative px-6 pb-16">
+        <div class="quality-background rounded-xl md:top-48"></div>
+        <div>
           <picture>
             <source
               srcset="./assets/static/about/desktop/image-quality.jpg"
@@ -172,8 +178,8 @@
             />
           </picture>
         </div>
-        <div class="queality-text text-center">
-          <h2 class="font-title text-28px font-black text-blanco my-6">
+        <div class="text-center">
+          <h2 class="font-title text-blanco text-28px mb-6 mt-14 font-black">
             Uncompromising quality
           </h2>
           <p class="text-blanco font-text">
@@ -189,67 +195,77 @@
     </div>
     <section class="headquarters mb-28">
       <div class="headquarters-container">
-        <h3 class="text-center text-2xl text-gris font-black font-title">
+        <h3
+          class="text-center text-2xl text-gris font-black font-title md:text-left"
+        >
           Our headquarters
         </h3>
-        <div class="country-box mt-20">
-          <div>
-            <img
-              class="mx-auto mb-11"
-              src="./assets/static/about/desktop/illustration-uk.svg"
-              alt=""
-            />
+        <div class="md:grid md:grid-cols-3">
+          <div class="country-box mt-20">
+            <div>
+              <img
+                class="mx-auto mb-11 md:mx-0"
+                src="./assets/static/about/desktop/illustration-uk.svg"
+                alt=""
+              />
+            </div>
+            <div class="text-center md:text-left">
+              <h2
+                class="font-black text-text font-title text-28px mb-5 md:text-2xl"
+              >
+                United Kingdom
+              </h2>
+              <p class="font-text text-text">
+                68 Asfordby Rd <br />
+                Alcaston <br />
+                SY6 1YA <br />
+                +44 1241 918425
+              </p>
+            </div>
           </div>
-          <div class="text-center">
-            <h2 class="font-black text-text font-title text-28px mb-5">
-              United Kingdom
-            </h2>
-            <p class="font-text text-text">
-              68 Asfordby Rd <br />
-              Alcaston <br />
-              SY6 1YA <br />
-              +44 1241 918425
-            </p>
+          <div class="country-box mt-20">
+            <div>
+              <img
+                class="mx-auto mb-11 md:mx-0"
+                src="./assets/static/about/desktop/illustration-canada.svg"
+                alt=""
+              />
+            </div>
+            <div class="text-center md:text-left">
+              <h2
+                class="font-black text-text font-title text-28px mb-5 md:text-2xl"
+              >
+                Canada
+              </h2>
+              <p class="font-text text-text">
+                1528 Eglinton Avenue <br />
+                Toronto <br />
+                Ontario M4P 1A6 <br />
+                +1 416 485 2997
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="country-box mt-20">
-          <div>
-            <img
-              class="mx-auto mb-11"
-              src="./assets/static/about/desktop/illustration-canada.svg"
-              alt=""
-            />
-          </div>
-          <div class="text-center">
-            <h2 class="font-black text-text font-title text-28px mb-5">
-              Canada
-            </h2>
-            <p class="font-text text-text">
-              1528 Eglinton Avenue <br />
-              Toronto <br />
-              Ontario M4P 1A6 <br />
-              +1 416 485 2997
-            </p>
-          </div>
-        </div>
-        <div class="country-box mt-20">
-          <div>
-            <img
-              class="mx-auto mb-11"
-              src="./assets/static/about/desktop/illustration-australia.svg"
-              alt=""
-            />
-          </div>
-          <div class="text-center">
-            <h2 class="font-black text-text font-title text-28px mb-5">
-              Australia
-            </h2>
-            <p class="font-text text-text">
-              36 Swanston Street <br />
-              Kewell <br />
-              Victoria <br />
-              +61 4 9928 3629
-            </p>
+          <div class="country-box mt-20">
+            <div>
+              <img
+                class="mx-auto mb-11 md:mx-0"
+                src="./assets/static/about/desktop/illustration-australia.svg"
+                alt=""
+              />
+            </div>
+            <div class="text-center md:text-left">
+              <h2
+                class="font-black text-text font-title text-28px mb-5 md:text-2xl"
+              >
+                Australia
+              </h2>
+              <p class="font-text text-text">
+                36 Swanston Street <br />
+                Kewell <br />
+                Victoria <br />
+                +61 4 9928 3629
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -270,7 +286,7 @@
           <div
             class="flex justify-center items-center text-center my-12 xl:my-0"
           >
-            <div class="md:grid md:grid-cols-3 xl:flex">
+            <div class="grid md:grid-cols-3 xl:flex">
               <a
                 href="#"
                 class="font-bold text-gris font-text text-xs tracking-wider my-4 xl:mr-8 hover:text-blanco"

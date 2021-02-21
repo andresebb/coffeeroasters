@@ -32,6 +32,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         miti: "30% 70%",
+        taqui: "40% 50%",
       },
       inset: {
         "-quality": "-70px",
@@ -43,6 +44,9 @@ module.exports = {
     fontFamily: {
       title: ["Fraunces"],
       text: ["Barlow"],
+    },
+    gap: {
+      "10%": "10%",
     },
   },
   variants: {

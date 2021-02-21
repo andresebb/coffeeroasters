@@ -99,3 +99,13 @@ button {
   position: absolute;
   z-index: -99;
 }
+
+.quality-background {
+  background: #2c343e;
+  position: absolute;
+  top: 76px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
