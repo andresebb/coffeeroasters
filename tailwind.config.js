@@ -40,13 +40,16 @@ module.exports = {
       fontSize: {
         "28px": "28px",
       },
+      gap: {
+        "10%": "10%",
+      },
+      width: {
+        "40%": "40%",
+      },
     },
     fontFamily: {
       title: ["Fraunces"],
       text: ["Barlow"],
-    },
-    gap: {
-      "10%": "10%",
     },
   },
   variants: {
