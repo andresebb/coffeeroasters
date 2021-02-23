@@ -109,3 +109,12 @@ button {
   bottom: 0;
   z-index: -1;
 }
+
+.choose {
+  background: #0e8784 !important;
+  color: #e4e4e4;
+}
+
+.resaltado {
+  color: #0e8784;
+}
