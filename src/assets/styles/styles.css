@@ -118,3 +118,6 @@ button {
 .resaltado {
   color: #0e8784;
 }
+.first-capsule {
+  transition: 1s;
+}

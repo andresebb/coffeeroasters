@@ -72,11 +72,59 @@ function changeElection(list) {
 }
 
 changeElection(planDrink);
-
 changeElection(planType);
-
 changeElection(planMuch);
-
 changeElection(planGrind);
-
 changeElection(planOften);
+
+// Subiendo y bajando las flechas
+const arrows = document.querySelectorAll(".arrow-img");
+const firstCapsule = document.querySelector(".first-capsule");
+const secondCapsule = document.querySelector(".second-capsule");
+const thirdCapsule = document.querySelector(".third-capsule");
+const fourthCapsule = document.querySelector(".fourth-capsule");
+const fifthCapsule = document.querySelector(".fifth-capsule");
+
+function handleVisibility(capsule) {
+  if (capsule.style.display === "none") {
+    capsule.style.display = "block";
+    capsule.parentElement.style.marginBottom = "7rem";
+  } else {
+    capsule.style.display = "none";
+    capsule.parentElement.style.marginBottom = "3rem";
+  }
+}
+
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", () => {
+    if (arrow.style.transform === "rotate(180deg)") {
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      arrow.style.transform = "rotate(180deg)";
+    }
+
+    if (arrow.name === "first-arrow") {
+      handleVisibility(firstCapsule);
+    } else if (arrow.name === "second-capsule") {
+      handleVisibility(secondCapsule);
+    } else if (arrow.name === "third-capsule") {
+      handleVisibility(thirdCapsule);
+    } else if (arrow.name === "fourth-capsule") {
+      handleVisibility(fourthCapsule);
+    } else if (arrow.name === "fifth-capsule") {
+      handleVisibility(fifthCapsule);
+    }
+
+    // switch (arrow.name) {
+    //   case "first-arrow":
+    //     break;
+    //   case "second-capsule":
+    //     handleVisibility(secondCapsule);
+    //     break;
+    //   case "third-capsule":
+    //     handleVisibility(thirdCapsule);
+    //   case "cuarta":
+    //     handleVisibility(fourthCapsule);
+    // }
+  });
+});
