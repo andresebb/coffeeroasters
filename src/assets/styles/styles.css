@@ -91,6 +91,15 @@ button {
   border: 2px solid #0e8784;
 }
 
+.circulo2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border: 2px solid #0e8784;
+  z-index: 999;
+  position: relative;
+}
+
 .linea {
   border-top: 2px solid #fdd6ba;
   left: 0;
@@ -98,6 +107,14 @@ button {
   width: 71%;
   position: absolute;
   z-index: -99;
+}
+.linea2 {
+  border-top: 2px solid #fdd6ba;
+  left: 0;
+  top: 15px;
+  width: 71%;
+  position: absolute;
+  z-index: 99;
 }
 
 .quality-background {
@@ -120,4 +137,8 @@ button {
 }
 .first-capsule {
   transition: 1s;
+}
+
+.maximo {
+  z-index: 9999;
 }

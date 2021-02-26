@@ -87,7 +87,11 @@ const fifthCapsule = document.querySelector(".fifth-capsule");
 
 function handleVisibility(capsule) {
   if (capsule.style.display === "none") {
-    capsule.style.display = "block";
+    if (window.innerWidth >= 768) {
+      capsule.style.display = "grid";
+    } else {
+      capsule.style.display = "block";
+    }
     capsule.parentElement.style.marginBottom = "7rem";
   } else {
     capsule.style.display = "none";

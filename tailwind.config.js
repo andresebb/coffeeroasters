@@ -36,6 +36,7 @@ module.exports = {
         taqui: "40% 50%",
         plan: "85% 15%",
         drink: "70% 30%",
+        separate: "20% 70%",
       },
       inset: {
         "-quality": "-70px",
