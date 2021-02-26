@@ -62,11 +62,11 @@ function changeElection(list) {
           often = item.firstElementChild.textContent;
       }
 
-      drinkText.textContent = drink;
-      typeText.textContent = type;
-      muchText.textContent = much;
-      grindText.textContent = grind;
-      oftenText.textContent = often;
+      drinkText.textContent = drink || "Filter";
+      typeText.textContent = type || "Decaf";
+      muchText.textContent = much || "250g";
+      grindText.textContent = grind || "Cafetiere";
+      oftenText.textContent = often || "Every Week";
     });
   });
 }
