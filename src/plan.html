@@ -17,12 +17,12 @@
   </head>
   <body class="pb-12">
     <header
-      class="fixed maximo top-0 right-0 left-0 bg-white p-6 md:px-10 lg:px-20"
+      class="fixed maximo top-0 right-0 left-0 bg-white p-6 md:px-10 lg:px-20 xl:static"
     >
       <div class="flex md:justify-between">
-        <z class="w-2/4">
+        <a href="./index.html" class="w-2/4">
           <img src="./assets/static/shared/desktop/logo.svg" alt="" />
-        </z>
+        </a>
         <div class="w-2/4 flex flex-row-reverse md:hidden">
           <img
             id="burger-boton"
@@ -52,7 +52,7 @@
             </li>
             <li class="my-9 md:m-0 md:tracking-wider">
               <a
-                href=""
+                href="./plan.html"
                 class="text-2xl font-title font-black text-text md:font-text md:font-bold md:text-xs md:text-gris hover:text-foco uppercase"
               >
                 Create Your Plan
@@ -82,14 +82,14 @@
             </a>
           </li>
           <li class="my-9">
-            <a href="" class="text-2xl font-title font-black text-text">
+            <a href="./plan.html" class="text-2xl font-title font-black text-text">
               Create Your Plan
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <section id="hero" class="my-24 px-6 md:px-10 lg:px-20">
+    <section id="hero" class="my-24 px-6 md:px-10 lg:px-20 xl:mt-11">
       <div class="hero-container relative">
         <picture>
           <source
@@ -466,10 +466,62 @@
               <span id="often" class="resaltado">Every Week</span>."
             </p>
           </div>
-          <button class="btn flex mx-auto mt-14 mb-28">Create my plan!</button>
+          <button
+            id="plan-btn"
+            class="btn flex mx-auto mt-14 mb-28 outline-none"
+          >
+            Create my plan!
+          </button>
         </div>
       </div>
     </section>
+    <div
+      id="banner"
+      class="fixed top-0 bottom-0 right-0 left-0 bg-black z-banner hidden items-center justify-center bg-opacity-50"
+    >
+      <div class="p-6 md:p-28">
+        <div class="max-w-xl">
+          <p
+            class="font-title text-28px text-white font-black bg-background p-6 rounded-t-lg"
+          >
+            Order Summary
+          </p>
+          <div class="bg-white p-6 rounded-b-lg">
+            <div class="text-gris">
+              <p id="order" class="font-title font-black text-2xl">
+                “I drink my coffee as
+                <span id="drink" class="resaltado"> Filter </span>, with a
+                <span id="type" class="resaltado">Decaf </span> type of bean.
+                <span id="much" class="resaltado"> 250g</span> ground ala
+                <span id="grind" class="resaltado"> Cafetiere</span>, sent to me
+                <span id="often" class="resaltado">Every Week</span>."
+              </p>
+              <p>
+                Is this correct? You can proceed to checkout or go back to plan
+                selection if something is off. Subscription discount codes can
+                also be redeemed at the checkout.
+              </p>
+            </div>
+            <div id="mobile" class="close-banner md:hidden">
+              <button
+                class="btn w-full font-black font-title mt-6 outline-none"
+              >
+                Checkout - $14.00 / mo
+              </button>
+            </div>
+            <div
+              id="tablet"
+              class="hidden justify-between items-center md:flex"
+            >
+              <p class="font-title text-3xl font-black text-text">
+                $14.00 / mo
+              </p>
+              <button class="btn close-banner outline-none">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer
       id="footer"
       class="bg-background mx-6 flex items-center justify-center py-12 md:mx-10 xl:px-20"
@@ -500,7 +552,7 @@
                 ABOUT US
               </a>
               <a
-                href="#"
+                href="./plan.html"
                 class="font-bold text-gris font-text text-xs tracking-wider my-4 hover:text-blanco"
               >
                 CREATE YOUR PLAN

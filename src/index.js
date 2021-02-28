@@ -6,24 +6,6 @@ const planMuch = document.querySelectorAll(".plan-much");
 const planGrind = document.querySelectorAll(".plan-grind");
 const planOften = document.querySelectorAll(".plan-often");
 
-const openBurgerMenu =
-  "https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-hamburger.svg?alt=media&token=cc5191a7-2762-43ef-af85-6fa72ce027ff";
-const closeBurgerMenu =
-  "https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-close.svg?alt=media&token=3eab5dc9-204b-4402-aaad-10ae6e004c56";
-
-const button = document.getElementById("burger-boton");
-const menu = document.getElementById("menu");
-
-button.onclick = () => {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-    button.src = openBurgerMenu;
-  } else {
-    menu.style.display = "block";
-    button.src = closeBurgerMenu;
-  }
-};
-
 //Opciones Disponibles
 const drinkText = document.getElementById("drink");
 const typeText = document.getElementById("type");
@@ -35,6 +17,30 @@ let type;
 let much;
 let grind;
 let often;
+
+const button = document.getElementById("burger-boton");
+const menu = document.getElementById("menu");
+
+//Crear un plan
+
+const openBanner = document.getElementById("plan-btn");
+const banner = document.getElementById("banner");
+const closeBanner = document.querySelectorAll(".close-banner");
+
+const openBurgerMenu =
+  "https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-hamburger.svg?alt=media&token=cc5191a7-2762-43ef-af85-6fa72ce027ff";
+const closeBurgerMenu =
+  "https://firebasestorage.googleapis.com/v0/b/woorki-ve.appspot.com/o/icon-close.svg?alt=media&token=3eab5dc9-204b-4402-aaad-10ae6e004c56";
+
+button.onclick = () => {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    button.src = openBurgerMenu;
+  } else {
+    menu.style.display = "block";
+    button.src = closeBurgerMenu;
+  }
+};
 
 // Cambian color en una lista al elegir una opcion
 function changeElection(list) {
@@ -118,17 +124,19 @@ arrows.forEach((arrow) => {
     } else if (arrow.name === "fifth-capsule") {
       handleVisibility(fifthCapsule);
     }
+  });
+});
 
-    // switch (arrow.name) {
-    //   case "first-arrow":
-    //     break;
-    //   case "second-capsule":
-    //     handleVisibility(secondCapsule);
-    //     break;
-    //   case "third-capsule":
-    //     handleVisibility(thirdCapsule);
-    //   case "cuarta":
-    //     handleVisibility(fourthCapsule);
-    // }
+// Crear un plan Btn
+
+openBanner.addEventListener("click", () => {
+  banner.classList.remove("hidden");
+  banner.classList.add("flex");
+});
+
+closeBanner.forEach((buttonClose) => {
+  buttonClose.addEventListener("click", () => {
+    banner.classList.remove("flex");
+    banner.classList.add("hidden");
   });
 });

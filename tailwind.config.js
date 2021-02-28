@@ -30,6 +30,7 @@ module.exports = {
       },
       zIndex: {
         negativo: "-99",
+        banner: "99999",
       },
       gridTemplateColumns: {
         miti: "30% 70%",
